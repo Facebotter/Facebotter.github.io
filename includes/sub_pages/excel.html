@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict/dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="../../includes/menu.css" />
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<style>
+		li{
+			font-family: 'Montserrat Subrayada', sans-serif;
+			color: #000000;
+			text-align: center;
+		}
+		
+		* {
+			box-sizing: border-box;
+		}
+		
+		#Header {
+			background-color: #DE8787;
+			height: 200px;
+			width: 1000px;
+		}
+		
+		.body {
+			margin: 0;
+		}
+		
+		#Logo {
+			float: left;
+			max-width: 20%;
+			height: auto;
+		}
+	
+		#LinkedinLogo {
+			float: loeft;
+			max-width: 100%;
+			height: auto;
+		}
+		
+		#dropdown {
+			clear: left;
+		}
+		
+		#pageWrapper {
+			font: 14px/1.4 'Montserrat', sans-serif;
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		#blogSlogan {
+			text-align: center;
+			position: relative;
+			font-size: 25px;
+			color: #ffffff;
+			width: 310px;
+			left: 440px;
+			top: -190px;
+		}
+		
+		#afterSlogan {
+			text-align: center;
+			position: relative;
+			color: #ffffff;
+			width: 600px;
+			left: 300px;
+			top: -170px;
+		}
+		
+		.column {
+			float: left;
+			padding: 10px;
+		}
+		
+		.column.left {
+			height: 1000px;
+			text-align: center;
+			background-color: #DE8787;
+			width: 30%;
+		}
+		
+		.column.right {
+			height: 1000px;
+			text-align: center;
+			line-height: 3;
+			background-color: #D7E3F4;
+			left: 100px;
+			width: 70%;
+		}
+
+		.body:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		.footer {
+			color: #ffffff;
+			background-color: #333;
+			padding: 10px;
+			text-align: center;
+		}
+		
+	</style>
+	<title>HTML Layout</title>
+</head>
+
+<body>
+
+	<div id="pageWrapper">
+	
+		<div id="Header">
+			<h1 od="blogTitle"></h1>
+			<img src="../../images/logo2.png" alt="Logo" id="Logo"/>
+			<h1 id="blogSlogan">Welcome to My Portfolio!</h1>
+			<p id="afterSlogan">Thank you for coming to my website! Here I hope to showcase some of the skills and assets I possess that I believe will be of use to UPS, as well as give some ideas about my work ethic and personality.</p>
+		</div> <!-- End Header -->
+		
+		<div id="dropdown">
+			<ul>
+			  <li><a href="../../portfoliowebsite.html">Home</a></li>
+			  <li><a href="aboutme.html">About Me</a></li>
+			  <li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Accomplishments ▼</a>
+				<div class="dropdown-content">
+				  <a href="../../includes/sub_pages/excel.html">Excel</a>
+				  <a href="../../includes/sub_pages/outsideofwork.html">Outside of Work</a>
+				  <a href="../../includes/sub_pages/thiswebsite.html">This website!</a>
+				</div>
+			  </li>
+			</ul>
+		</div> <!-- End of Dropdown -->
+		
+		<div class="body">
+		
+			<div class="column left">
+				<h2>Let's Connect!</h2>
+				<a href="https://www.linkedin.com/in/garrettwilkinson/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bc6NnllBqQz6V%2FCm2vZ92jQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-nav.settings_view_profile" style="text-decoration: none;color: #92ca55;"><img src="../../images/linkedin.png" style="display: block;margin: 0;padding-right: 5px;float: left;" id="LinkedinLogo"></a>
+			</div>
+			
+			<div class="column right">
+				<h2>Accomplishments regarding Excel</h2>
+				<p>Though I'm sure many regard the Haslet hub in Texas with some measure of grandeur regarding it's peak technological innovation in automation, I couldn't help but notice that
+				   automation was lacking regarding many of the manual data entry procedures. Specifically, with much of the work I have to do in Excel before and after the sort. The first, and most
+				   obvious thing I noticed upon my promotion was that the excel sheet I used to log current building statistics was nothing more than 4 columns and 4 rows with no formatting whatsoever.
+				   Over time, the sheet evolved beneath my fingertips to become something much more cohesive and informative. Many formulas and headscratches later, I came up with a sheet with several
+				   improvements, namely taking current statistics and populating the rest of the sheet with important information to aid with the days work.</p>
+				<p>Previously, that was my most time consuming task. However, as I was coming to understand Excel better, I was also practicing with Python. One problem that we had was with the creation of the 
+				   planning sheet for the daily incoming loads. Much of the task was repetetive and monotonous, spanning about an hour or twos work at a time, however with my understanding of Excel at
+				   the time there was not much I could think of to expediate the process. However, with my newfound knowledge of Python and- specifically- the pandas library, I now had a method of data
+				   entry from external documents that I could automate so long as I had access to the necessary documents. This is still a work in process, but a working (albeit aesthetically ugly) prototype
+				   is nearly done.<p>
+				<p>That concludes the projects I believe worth mentioning regarding Excel. If you'd like, I can provide copies of the aforementioned programs for review.</p>
+				
+			</div>
+			
+		</div> <!-- End of Body -->
+		
+		<div class="footer">
+			<p>Email: garrettwilkinson7@gmail.com • Cellphone: (214)-908-9329</p>
+		</div> <!-- End of Footer -->
+	
+	</div> <!-- End of pageWrapper -->
+
+</body>
+</html>

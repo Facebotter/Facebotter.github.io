@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict/dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="../../includes/menu.css" />
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<style>
+		li{
+			font-family: 'Montserrat Subrayada', sans-serif;
+			color: #000000;
+			text-align: center;
+		}
+		
+		* {
+			box-sizing: border-box;
+		}
+		
+		#Header {
+			background-color: #DE8787;
+			height: 200px;
+			width: 1000px;
+		}
+		
+		.body {
+			margin: 0;
+		}
+		
+		#Logo {
+			float: left;
+			max-width: 20%;
+			height: auto;
+		}
+		
+		#certificate {
+			float: center;
+			max-width: 100%;
+			height: auto;
+		}
+		
+		#dropdown {
+			clear: left;
+		}
+		
+		#pageWrapper {
+			font: 14px/1.4 'Montserrat', sans-serif;
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		#blogSlogan {
+			text-align: center;
+			position: relative;
+			font-size: 25px;
+			color: #ffffff;
+			width: 310px;
+			left: 440px;
+			top: -190px;
+		}
+		
+		#afterSlogan {
+			text-align: center;
+			position: relative;
+			color: #ffffff;
+			width: 600px;
+			left: 300px;
+			top: -170px;
+		}
+		
+		.column {
+			float: left;
+			padding: 10px;
+		}
+		
+		.column.left {
+			height: 1000px;
+			text-align: center;
+			background-color: #DE8787;
+			width: 30%;
+		}
+		
+		.column.right {
+			height: 1000px;
+			text-align: center;
+			line-height: 3;
+			background-color: #D7E3F4;
+			left: 100px;
+			width: 70%;
+		}
+
+		.body:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		.footer {
+			color: #ffffff;
+			background-color: #333;
+			padding: 10px;
+			text-align: center;
+		}
+		
+	</style>
+	<title>HTML Layout</title>
+</head>
+
+<body>
+
+	<div id="pageWrapper">
+	
+		<div id="Header">
+			<h1 od="blogTitle"></h1>
+			<img src="../../images/logo2.png" alt="Logo" id="Logo"/>
+			<h1 id="blogSlogan">Welcome to My Portfolio!</h1>
+			<p id="afterSlogan">Thank you for coming to my website! Here I hope to showcase some of the skills and assets I possess that I believe will be of use to UPS, as well as give some ideas about my work ethic and personality.</p>
+		</div> <!-- End Header -->
+		
+		<div id="dropdown">
+			<ul>
+			  <li><a href="../../portfoliowebsite.html">Home</a></li>
+			  <li><a href="aboutme.html">About Me</a></li>
+			  <li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Accomplishments ▼</a>
+				<div class="dropdown-content">
+				  <a href="../../includes/sub_pages/excel.html">Excel</a>
+				  <a href="../../includes/sub_pages/outsideofwork.html">Outside of Work</a>
+				  <a href="../../includes/sub_pages/thiswebsite.html">This website!</a>
+				</div>
+			  </li>
+			</ul>
+		</div> <!-- End of Dropdown -->
+		
+		<div class="body">
+		
+			<div class="column left">
+				<h2>Certificates</h2>
+				<img src="../../images/pythoncertificate.png" alt="python certificate" id="certificate"/>
+				<img src="../../images/mlcertificate.png" alt="machine learning certificate" id="certificate"/>
+			</div>
+			
+			<div class="column right">
+				<h2>Accomplishments Outside of Work</h2>
+				<p>I've paid for two certificates at the time of writing this, but I plan on taking the tests for many more. The current certificats I own are in Python and Machine learning. Both
+				   are things I'm proud of and very passionate about, but I will be widening my certificate horizon soon enough- It's been a delicate financial balance, but I strongly believe in
+				   investing in the future! The left column displays images of the two. Future certificates will include: C++, C#, React, JQuery, PHP, SQL, etc. </p>
+				<p>Other than official certificates, I have invested a lot of time into solving programming challenges daily (for the fun of it!) and creating random projects to automate daily tasks.
+				   One thing I have struggled with in the past is getting a solid daily routine, as I enjoy waking up early to learn and practice programming but I often find myself either tired or 
+				   lacking the results I desire, so I have also been working on a daily routine organization app, but that is still a work in progress and I have little to show for it as it's a recent 
+				   project- I just thought it worth mentioning!<p>
+				<p>These are all things I am proud of that I work on outside of work, but as my time is spent more and more at the hub I'm finding it more useful and stress-relieving to work on projects
+				   that assist me in the workplace, and for that reason I've been dividing most of my time programming more towards the work side of my life.</p>
+				
+			</div>
+			
+		</div> <!-- End of Body -->
+		
+		<div class="footer">
+			<p>Email: garrettwilkinson7@gmail.com • Cellphone: (214)-908-9329</p>
+		</div> <!-- End of Footer -->
+	
+	</div> <!-- End of pageWrapper -->
+
+</body>
+</html>
