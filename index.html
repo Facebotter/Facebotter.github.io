@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict/dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="./includes/menu.css" />
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<style>
+		li{
+			font-family: 'Montserrat Subrayada', sans-serif;
+			color: #000000;
+			text-align: center;
+		}
+		
+		* {
+			box-sizing: border-box;
+		}
+		
+		#Header {
+			background-color: #DE8787;
+			height: 200px;
+			width: 1000px;
+		}
+		
+		.body {
+			margin: 0;
+		}
+		
+		#Logo {
+			float: left;
+			max-width: 20%;
+			height: auto;
+		}
+		
+		#LinkedinLogo {
+			float: loeft;
+			max-width: 100%;
+			height: auto;
+		}
+		
+		#dropdown {
+			clear: left;
+		}
+		
+		#pageWrapper {
+			font: 14px/1.4 'Montserrat', sans-serif;
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		#blogSlogan {
+			text-align: center;
+			position: relative;
+			font-size: 25px;
+			color: #ffffff;
+			width: 310px;
+			left: 440px;
+			top: -190px;
+		}
+		
+		#afterSlogan {
+			text-align: center;
+			position: relative;
+			color: #ffffff;
+			width: 600px;
+			left: 300px;
+			top: -170px;
+		}
+		
+		.column {
+			float: left;
+			padding: 10px;
+		}
+		
+		.column.left {
+			height: 1000px;
+			text-align: center;
+			background-color: #DE8787;
+			width: 30%;
+		}
+		
+		.column.right {
+			height: 1000px;
+			text-align: center;
+			line-height: 3;
+			background-color: #D7E3F4;
+			left: 100px;
+			width: 70%;
+		}
+
+		.body:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		.footer {
+			color: #ffffff;
+			background-color: #333;
+			padding: 10px;
+			text-align: center;
+		}
+		
+	</style>
+	<title>HTML Layout</title>
+</head>
+
+<body>
+
+	<div id="pageWrapper">
+	
+		<div id="Header">
+			<h1 od="blogTitle"></h1>
+			<img src="./images/logo2.png" alt="Logo", id="Logo"/>
+			<h1 id="blogSlogan">Welcome to My Portfolio!</h1>
+			<p id="afterSlogan">Thank you for coming to my website! Here I hope to showcase some of the skills and assets I possess that I believe will be of use to UPS, as well as give some ideas about my work ethic and personality.</p>
+		</div> <!-- End Header -->
+		
+		<div id="dropdown">
+			<ul>
+			  <li><a href="#home">Home</a></li>
+			  <li><a href="./includes/sub_pages/aboutme.html">About Me</a></li>
+			  <li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Accomplishments ▼</a>
+				<div class="dropdown-content">
+				  <a href="./includes/sub_pages/excel.html">Excel</a>
+				  <a href="./includes/sub_pages/outsideofwork.html">Outside of Work</a>
+				  <a href="./includes/sub_pages/thiswebsite.html">This website!</a>
+				</div>
+			  </li>
+			</ul>
+		</div> <!-- End of Dropdown -->
+		
+		<div class="body">
+		
+			<div class="column left">
+				<h2>Let's Connect!</h2>
+				<a href="https://www.linkedin.com/in/garrettwilkinson/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bc6NnllBqQz6V%2FCm2vZ92jQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-nav.settings_view_profile" style="text-decoration: none;color: #92ca55;"><img src="./images/linkedin.png" style="display: block;margin: 0;padding-right: 5px;float: left;" id="LinkedinLogo"></a>
+
+			
+			</div>
+			<div class="column right">
+				<h2>Hi, I'm Garrett.</h2>
+				<p>If you're reading this, I appreciate that you took the time to review my application. This website was created for the sole purpose of acting as my portfolio for my application to the 
+				   Specialist Programmer position posted on the UPS internal job postings website. The goal here is to give you a better look at myself as a candidate and a person, and I hope you enjoy a
+				   more interactive way of viewing your potential employee's credentials. Please use the menu bar above to parse through the website, or keep reading for some interesting facts about
+				   myself!</p>
+				<p>The only time I wasn't interested in computers was before I knew the things even existed! I've always pursued automation as a concept, and I can't remember a time I didn't try to program
+				   a task to save time and do something else. It started as a love for video games, and a desire to understand how they operated at a technical level. Then, my sights set on Data
+				   Science, and I taught myself the basics of python and machine learning to build models about things that interested me. However, this was not quite the path I desired, so I stayed at UPS
+				   to more further develop my goals as a programmer. While I tried to determine what I desired the most, I taught myself everything I could to get a good slice of the various different elements
+				   of programming, whether that was Excel, python, C++ and C#, HTML and CSS (duh), etc. I was always striving to learn something new. When I saw this job posting, I just knew that I had to 
+				   apply! So, in parting, thank you so much for taking the time to review my portfolio. If you find something lacking and decide to turn me down, please let me know why! I'm always trying to improve.</p>
+				<p>Thank you for your time.</p>
+				
+			</div>
+			
+		</div> <!-- End of Body -->
+		
+		<div class="footer">
+			<p>Email: garrettwilkinson7@gmail.com • Cellphone: (214)-908-9329</p>
+		</div> <!-- End of Footer -->
+	
+	</div> <!-- End of pageWrapper -->
+
+</body>
+</html>
